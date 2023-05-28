@@ -18,7 +18,7 @@ void PALL(stack_t **stack, char *arg, unsigned int line_number)
 	{
 		while (current != NULL)
 		{
-			printf("%d\n", current->n);
+			fprintf(stdout, "%d\n", current->n);
 			current = current->prev;
 		}
 	}
