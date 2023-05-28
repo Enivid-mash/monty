@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 
 instruction_t instructions[] = {
 	{"push", PUSH},
