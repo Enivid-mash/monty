@@ -53,7 +53,7 @@ int main(int argc, char *argv[])
 		}
 		if (!found)
 		{
-			fprintf(stderr, "L%d: Unknown instruction %s\n", line_number, opcode);
+			fprintf(stderr, "L%d: unknown instruction%s\n", line_number, opcode);
 			exit(EXIT_FAILURE);
 		}
 		line_number++;
