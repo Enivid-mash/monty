@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 {
 	FILE *file = NULL;
 	stack_t *stack = NULL;
-	char line[1024], *arg = NULL, *opcode = NULL;
+	char line[100], *arg = NULL, *opcode = NULL;
 	int line_number = 1, found = 0;
 	unsigned long i;
 
@@ -53,7 +53,7 @@ int main(int argc, char *argv[])
 		}
 		if (!found)
 		{
-			fprintf(stderr, "L%d: unknown instruction%s\n", line_number, opcode);
+			fprintf(stderr, "L%d: Unknown instruction%s\n", line_number, opcode);
 			exit(EXIT_FAILURE);
 		}
 		line_number++;
